@@ -16,6 +16,7 @@ def one():
     print('原价/折扣价：'+str(str1['data']['market_price'])+'/'+str(str1['data']['price']))
     print('详情内容：'+str(str1['data']['sub_title']))
     print('-------------------"'+str1['data']['name']+'"的价格波动------------------')
+    # 实时监控商品价格
     while (True):
         nowTimeAndPrint = strftime('%Y'+'-'+'%m'+'-'+'%d'+'%H:%M:%S')
         print(nowTimeAndPrint+",价格为:"+str(str1['data']['price']/100))
