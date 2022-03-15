@@ -9,6 +9,7 @@ def one():
     }
     req=requests.get(url,headers=head)
     str1=json.loads(req.text)
+    # 解析
     print('------------------商品：'+str1['data']['name']+'------------------')
     print('规格：' +str1['data']['spec'])
     print('价格：' +str(str1['data']['price']/100))
