@@ -19,7 +19,7 @@ def one():
     # 实时监控商品价格
     while (True):
         # 自定义时间格式
-        nowTimeAndPrint = strftime('%Y'+'-'+'%m'+'-'+'%d'+'%H:%M')
+        nowTimeAndPrint = strftime('%Y'+'-'+'%m'+'-'+'%d'+' '+'%H:%M')
         print(nowTimeAndPrint+",价格为:"+str(str1['data']['price']/100))
         sleep(3)
 if __name__ == '__main__':
